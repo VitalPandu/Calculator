@@ -1,0 +1,66 @@
+<html>
+<head>
+<script>
+
+function add(){
+var input1 = Number(document.getElementById('input1').value);
+var input2 = Number(document.getElementById('input2').value);
+var o= input1+input2;
+document.getElementById('output').value= o;
+}
+
+function subtract(){
+var input1 = Number(document.getElementById('input1').value);
+var input2 = Number(document.getElementById('input2').value);
+var o= input1-input2;
+document.getElementById('output').value= o;
+}
+
+function multiply(){
+var input1 = Number(document.getElementById('input1').value);
+var input2 = Number(document.getElementById('input2').value);
+var o= input1*input2;
+document.getElementById('output').value= o;
+}
+
+function division(){
+var input1 = Number(document.getElementById('input1').value);
+var input2 = Number(document.getElementById('input2').value);
+var o= input1/input2;
+document.getElementById('output').value= o;
+}
+</script>
+
+</head>
+<body>
+<div align="center">
+<table>
+    <thead>Calculator</thead>
+    <tr>
+        <td>
+            <label for="input1">Input 1</label>
+            <input type="number" id="input1" value="0">
+        </td>
+        <td>
+            <label for="input2">Input 2</label>
+            <input type="number" id="input2" value="0">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="+" id="add" onclick="add()"></td>
+        <td><input type="button" value="-" id="subtraction" onclick="subtract()"> </td>
+        </tr>
+    <tr>
+        <td><input type="button" value="*" id="multiplication" onclick="multiply()"></td>
+        <td><input type="button" value="/" id="division" onclick="division()"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="output"> output</label>
+            <input  id="output">
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
